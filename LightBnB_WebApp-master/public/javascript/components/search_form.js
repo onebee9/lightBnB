@@ -9,14 +9,14 @@ $(() => {
 
       <div class="search-property-form__field-wrapper">
         <label for="search-property-form__minimum-price-per-night">Minimum Cost</label>
-        <input type="number" name="minimum_price_per_night" placeholder="Minimum Cost" id="search-property-form__minimum-price-per-night">
+        <input type="number" name="minimum_price_per_night" placeholder="Minimum Cost" id="search-property-form__minimum-price-per-night" step="100">
         <label for="search-property-form__maximum-price-per-night">Maximum Cost</label>
-        <input type="number" name="maximum_price_per_night" placeholder="Maximum Cost" id="search-property-form__maximum-price-per-night">
+        <input type="number" name="maximum_price_per_night" placeholder="Maximum Cost" id="search-property-form__maximum-price-per-night" step="100">
       </div>
 
       <div class="search-property-form__field-wrapper">
         <label for="search-property-form__minimum-rating">Minimum Rating</label>
-        <input type="number" name="minimum_rating" placeholder="Minimum Rating" id="search-property-form__minimum-rating">
+        <input type="number" name="minimum_rating" placeholder="Minimum Rating" id="search-property-form__minimum-rating" max="5">
       </div>
 
       <div class="search-property-form__field-wrapper">
