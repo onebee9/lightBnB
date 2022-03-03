@@ -18,12 +18,10 @@ app.use(cookieSession({
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// /api/endpoints
 const apiRouter = express.Router();
 apiRoutes(apiRouter, database);
 app.use('/api', apiRouter);
 
-// /user/endpoints
 const userRouter = express.Router();
 userRoutes(userRouter, database);
 app.use('/users', userRouter);
@@ -34,5 +32,5 @@ app.get("/test", (req, res) => {
   res.send("🤗");
 });
 
-const port = process.env.PORT || 3000; 
+const port = process.env.PORT || 3000;
 app.listen(port, (err) => console.log(err || `listening on port ${port} 😎`));
